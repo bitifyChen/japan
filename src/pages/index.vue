@@ -7,7 +7,7 @@ import { multiply } from '@/composables/useMath.js'
 const piniaBase = useBaseStore()
 
 const show = ref(false)
-const yen = ref('10000')
+const yen = ref('0')
 const yenShow = computed(() => (yen.value === '' ? 0 : Number(yen.value).toLocaleString()))
 
 //NTD

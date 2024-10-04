@@ -38,7 +38,8 @@ export const useCardStore = defineStore('card', {
         id:'5',
         name: '全支付',
         tip: '4285(每筆857內)，前1875綁國泰多8%',
-        rate: 10
+        rate: 10,
+        limit: 857
       }
     ]
   }),

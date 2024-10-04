@@ -2,7 +2,7 @@ import { defineStore } from 'pinia'
 
 export const useBaseStore = defineStore('base', {
   state: () => ({
-    holdYenRate: 0.224,
+    holdYenRate: 0.222,
     holdYenNum: 0,
     timelyYenRate:0.222
   }),

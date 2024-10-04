@@ -38,7 +38,7 @@ export default defineConfig({
         name: 'Japan! 錢錢小幫手',
         short_name: '錢錢小幫手',
         description: '協助您計算您的該怎麼支付',
-        theme_color: '#3E56D5',
+        theme_color: '#255359',
         icons: [
           {
             src: '192.png',

@@ -1,7 +1,7 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { CreditCard } from 'lucide-vue-next'
-import { multiply } from '@/composables/useMath.js'
+import { round, multiply } from '@/composables/useMath.js'
 import { useBaseStore } from '@/stores/useBase.js'
 import { useCardStore } from '@/stores/useCard.js'
 const props = defineProps({
@@ -23,9 +23,12 @@ const cardListShow = computed(() =>
   cardList.value.map((item) => ({
     ...item,
     value: yen.value
-      ? multiply(
-          multiply(yen.value, item.exRate ? item.exRate : ntdCardRate.value),
-          (100 - item.rate) / 100
+      ? round(
+          multiply(
+            multiply(yen.value, item.exRate ? item.exRate : ntdCardRate.value),
+            (100 - item.rate) / 100
+          ),
+          0
         )
       : ''
   }))
