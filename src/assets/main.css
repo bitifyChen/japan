@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #255359;
+}
+#app {
+  max-width: 920px;
+  margin: 0 auto;
+  font-weight: normal;
+  background-color: var(--main-bg-color);
+}
+
+:root {
+  --main-primary-color: #255359;
+  --main-sub-color: #ffc940;
+  --main-gray-color: #e7e7e7;
+
+  --van-primary-color: var(--main-primary-color) !important;
+  --el-color-primary: var(--main-primary-color) !important;
+
+  --text-main-color: #0d1b34;
+  --text-secondary-color: #8696bb;
+  --text-notice-color: #feb052;
+}

@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) navigator.serviceWorker.register('/japan/dev-sw.js?dev-sw', { scope: '/japan/', type: 'classic' })
